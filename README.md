@@ -2,7 +2,7 @@
 
 This repository presents an analysis of potential fraudulent transactions in the dataset.
 
-## Analysis
+## Analysis--Part 1
 
 ### Isolating Transactions of Each Cardholder
 
@@ -60,3 +60,26 @@ All the output `.csv` files are listed below:
 [top_100_day.csv](./SQL-Solved/output-file/top_100_day.csv), 
 [top_100_morning.csv](./SQL-Solved/output-file/top_100_morning.csv), 
 [top_merchant.csv](./SQL-Solved/output-file/top_merchant.csv)
+
+## Analysis--Part 2
+
+### Two important customers 
+
+From the two plots below, it appears that cardholder #2 has a relatively consistent spending pattern, with most transactions falling within the $1 to $20 range. This suggests that this cardholder's spending habits are relatively stable and predictable, which is typical for most individuals.
+
+On the other hand, cardholder #18 exhibits a much more irregular spending pattern. Most transactions are under $20, which is similar to cardholder #2, but there are also instances of unusually high spending that exceeds $1000. This kind of behavior is less typical and could potentially indicate fraudulent activity.
+
+Large transactions are not inherently suspicious as there may be legitimate reasons for them, such as large purchases or payment of bills. However, when these transactions are infrequent and not happen in a fixed time interval, they become more suspicious to me.
+
+![Query Result](./Python-Solved/output-file/line_plot2.png)
+![Query Result](./Python-Solved/output-file/line_plot18.png)
+
+### Excessive spending on corporate credit card
+
+It appears that there is at least one outlier in the months of January, March, May. There seems to be 3 outliers in the month of April and June.
+
+The presence of these outliers may indicate unusual or potentially excessive spending activity. In most cases, the transaction amounts for this cardholder#25 are relatively low and consistent, as shown by the "box" part of the box plot. However, the outliers are significantly higher than the typical transaction amounts, which may suggest that these transactions are anomalous.
+
+![Query Result](./Python-Solved/output-file/box_plot.png)
+
+
