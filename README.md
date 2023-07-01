@@ -38,10 +38,14 @@ The top 100 highest transactions that took place between 7:00 AM and 9:00 AM are
 
 **Question2:** Is there a higher number of fraudulent transactions made during this time frame versus the rest of the day?
 
-**Answer:** 
+**Answer:** There is a higher number of fraudulent transactions made during the 7-9 time frame. In the analysis, I conducted two separate examinations to identify abnormal transactions. First, I focused on the early morning timeframe from 7AM to 9AM, during which nine transactions exceeding $100 were noted. Given the typical spending habits in these early hours, these transactions can be deemed unusual.
+
+However, for the remainder of the day, it's not uncommon to see transactions over $100 due to a variety of activities. Therefore, to identify anomalies during this period, I set a higher threshold of $2000. Conventionally, large transactions of this magnitude are conducted via cheque or bank draft, not credit card.
+
+Upon examination of the data set, only 3 transactions were found that crossed this high threshold. These are the transactions that we can potentially categorize as abnormal.
+
+![Query Result](./SQL-Solved/output-file/top_100_day.png)
 
 **Question3:** If you answered yes to the previous question, explain why you think there might be fraudulent transactions during this time frame.
 
-**Answer:** 
-
-
+**Answer:** Fraudsters often try to make transactions when they believe the cardholder will be less likely to notice. So, during the the 7-9 time frame, there is more fraudulent or abnormal transactions.
