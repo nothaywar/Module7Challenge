@@ -49,3 +49,14 @@ Upon examination of the data set, only 3 transactions were found that crossed th
 **Question3:** If you answered yes to the previous question, explain why you think there might be fraudulent transactions during this time frame.
 
 **Answer:** Fraudsters often try to make transactions when they believe the cardholder will be less likely to notice. So, during the the 7-9 time frame, there is more fraudulent or abnormal transactions.
+
+### Top 5 Merchants Prone to Small Transactions
+
+The top 5 merchants with the most transactions less than $2.00 are identified. See [top merchants](./SQL-Solved/top_merchant.sql) for the exact query.
+
+![Query Result](./SQL-Solved/output-file/top_merchant.png)
+
+All the output `.csv` files are listed below:
+[top_100_day.csv](./SQL-Solved/output-file/top_100_day.csv), 
+[top_100_morning.csv](./SQL-Solved/output-file/top_100_morning.csv), 
+[top_merchant.csv](./SQL-Solved/output-file/top_merchant.csv)
